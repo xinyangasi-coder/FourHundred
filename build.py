@@ -108,7 +108,7 @@ FOOTER = """
   <footer class="site-footer">
     <div class="wrap">
       <p class="legal">FourHundred is an education tool. It is not personalized financial, tax, or legal advice.</p>
-      <p><a href="{home}">Home</a> · <a href="{meth}">Method</a> · <a href="{ai}">AI tools</a> · <a href="{disc}">Disclaimer</a></p>
+      <p><a href="{home}">Home</a> · <a href="{meth}">Method</a> · <a href="{ai}">AI tools</a> · <a href="{priv}">Privacy</a> · <a href="{disc}">Disclaimer</a></p>
       <p>Minimum launch, week of September 29, 2026. United States only.</p>
     </div>
   </footer>
@@ -140,6 +140,7 @@ def paths(depth: int):
         "foundx": f"{prefix}foundations/index.html",
         "playx": f"{prefix}playbook/index.html",
         "startx": f"{prefix}start-here/index.html",
+        "priv": f"{prefix}privacy.html",
     }
 
 
@@ -422,7 +423,7 @@ def write_disclaimer():
     <h1>Disclaimer</h1>
     <p>FourHundred is an education tool for adults in the United States. It is not personalized financial, tax, or legal advice. Nothing on this site is an offer to sell a financial product or a substitute for a licensed professional who can see your full situation.</p>
     <p>Pages are dated. Evidence cards change when their primary source changes. If a number or definition is wrong, see Method for how corrections are handled.</p>
-    <p>Minimum launch pages do not sell products and do not take referral fees.</p>
+    <p>Minimum launch pages do not sell products and do not take referral fees. See also <a href="privacy.html">Privacy</a>.</p>
   </main>
 """
     page += FOOTER.format(**p)
@@ -530,6 +531,16 @@ if __name__ == "__main__":
         "Readers who want a model to explain a FourHundred page, compare two published methods, or draft a question for a company or counselor.",
         "Anyone about to paste a statement, account number, Social Security number, or bank login into a chatbot.",
         CONTENT / "FourHundred-ai-tools.md",
+        0,
+    )
+    write_article(
+        "privacy.html",
+        "Privacy",
+        "About",
+        "Last reviewed September 29, 2026 · 4 minutes",
+        "Anyone who wants to know what FourHundred collects.",
+        "Readers who only need a situation path today.",
+        CONTENT / "FourHundred-privacy.md",
         0,
     )
     write_article(
