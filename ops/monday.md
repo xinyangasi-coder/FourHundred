@@ -5,6 +5,22 @@ Private checklist. Not linked from the site. Do this before touching any other p
 Today’s date: ________
 Decision: ship a new method / keep last week
 
+## When you tell Grok on Monday
+
+Send one of these two messages. Do not send a third kind.
+
+**A. Ship**
+
+> Monday Playbook. Ship: [working title]. Audience: [who]. Skip: [who should leave]. Source if any: [link].
+
+**B. Keep**
+
+> Monday Playbook. Keep last week.
+
+If the title is missing on A, Grok proposes at most one method that fits Method rules and waits for a yes before writing. No list of five options. No “also fix footer while we are here.”
+
+Grok then does only the three edits below. Method, Evidence, Foundations, and Start here stay closed unless you name a second task in a separate message.
+
 ## Rule
 
 A new Playbook page ships only if it still meets Method: useful under pressure, dollar example, named skip, primary source or labeled example, no product pick.
