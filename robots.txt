@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /content/
+Disallow: /build.py
+
+Sitemap: https://fourhundredx.com/sitemap.xml
