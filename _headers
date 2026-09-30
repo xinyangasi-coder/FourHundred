@@ -5,5 +5,9 @@
   Content-Type: image/svg+xml
   Cache-Control: public, max-age=86400
 
+/og.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
 /robots.txt
   Content-Type: text/plain; charset=utf-8
