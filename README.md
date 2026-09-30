@@ -4,7 +4,9 @@ Static U.S. money-information site for people already under financial pressure. 
 
 Live site: https://fourhundredx.com
 
-Site root is this folder (`index.html` at the top). Weekly updates: edit the markdown in `/content`, run `python3 build.py`, commit the generated HTML.
+What to open: Monday → `ops/monday.md`. File jobs → `ops/files.md`. New page chrome → `templates/chrome.html`.
+
+Live pages are the `.html` files. Do not edit `content/*.md` expecting the site to change. Do not run `build.py` on Monday.
 
 ## Hosting
 
