@@ -3,5 +3,7 @@ Allow: /
 
 Disallow: /content/
 Disallow: /build.py
+Disallow: /ops/
+Disallow: /templates/
 
 Sitemap: https://fourhundredx.com/sitemap.xml
