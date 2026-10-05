@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Four-week bill grid — FourHundred</title>
+  <meta name="description" content="A printable four-week grid for deposits, rent, minimums, and utilities. Education only.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://fourhundredx.com/playbook/bill-calendar-sheet.html">
+  <meta property="og:site_name" content="FourHundred">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Four-week bill grid">
+  <meta property="og:description" content="A printable four-week grid for deposits, rent, minimums, and utilities. Education only.">
+  <meta property="og:url" content="https://fourhundredx.com/playbook/bill-calendar-sheet.html">
+  <meta property="og:image" content="https://fourhundredx.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://fourhundredx.com/og.png">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .sheet-actions { margin: 0 0 1rem; }
+    .sheet-actions button { font: inherit; background: #1c1914; color: #f3efe6; border: 0; padding: 0.45rem 0.9rem; cursor: pointer; }
+    .sheet-blank { border-bottom: 1px solid #1c1914; display: inline-block; min-width: 8rem; height: 1.05em; }
+    .sheet-table { width: 100%; border-collapse: collapse; margin: 0.6rem 0 1rem; }
+    .sheet-table td, .sheet-table th { border: 1px solid #1c1914; padding: 0.35rem 0.4rem; text-align: left; vertical-align: top; }
+    .sheet-table td { height: 1.7rem; }
+    .sheet-rules { font-size: 0.86rem; color: #4a453c; }
+    @media print {
+      .site-header .nav, .sheet-actions, .no-print { display: none !important; }
+      .site-header { position: static; border: 0; }
+      body { background: #fff; font-size: 10.5pt; }
+      .who { background: none; border: 1px solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../index.html">FourHundred</a>
+      <nav class="nav">
+        <a href="../start-here/index.html">Start here</a>
+        <a href="../foundations/index.html">Foundations</a>
+        <a href="index.html">Playbook</a>
+        <a href="../evidence/index.html">Evidence</a>
+        <a href="../method.html">Method</a>
+        <a href="../ai-tools.html">AI</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap article">
+    
+    <p class="eyebrow">Playbook sheet</p>
+    <h1>Four-week bill grid</h1>
+    <p class="sheet-actions no-print"><button id="print-sheet" type="button">Print this sheet</button> · <a href="bill-calendar.html">Method</a></p>
+    <p>Next deposit: <span class="sheet-blank"></span> &nbsp; Cash until then: <span class="sheet-blank"></span></p>
+    <table class="sheet-table">
+      <tr><th></th><th>Week 1</th><th>Week 2</th><th>Week 3</th><th>Week 4</th></tr>
+      <tr><td>Dates</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Deposit</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Rent</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Utilities</td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>Card minimum</td><td></td><td></td><td></td><td></td></tr>
+    </table>
+    <p>Circled date (due before the next deposit): <span class="sheet-blank" style="min-width:14rem"></span></p>
+    <p>If that circled item is a card minimum and rent is covered, ask to move the date. Ask what the first bill after the change will be.</p>
+    <p class="sheet-rules">This grid does not rank bills. A sooner collector date is not a reason to pay them before rent. If the circled item is housing or a shutoff utility, use the this-month bills path.</p>
+    <p class="sheet-rules">Method: <a href="bill-calendar.html">Four-week grid</a> · <a href="due-date.html">Due-date ask</a>. fourhundredx.com</p>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="legal">FourHundred is an education tool. It is not personalized financial, tax, or legal advice.</p>
+      <p class="no-print"><a href="../index.html">Home</a> · <a href="bill-calendar.html">Calendar method</a> · <a href="../terms.html">Terms</a></p>
+      <p>© 2026 Xinyang Chen. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("print-sheet").addEventListener("click", function () { window.print(); });
+  </script>
+</body>
+</html>
