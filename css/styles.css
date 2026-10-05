@@ -178,3 +178,9 @@ section { padding: 2rem 0; border-top: 1px solid var(--line); }
   margin: 1rem 0;
 }
 code, .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.9em; }
+
+.bar { height: 0.45rem; background: #e4ddd0; margin: 0.35rem 0 0.2rem; }
+.bar span { display: block; height: 100%; background: #1c1914; }
+.chart { margin: 0.8rem 0 0.4rem; max-width: 40rem; }
+.chart svg { width: 100%; height: auto; }
+.chart-note { font-size: 0.86rem; color: #4a453c; }
