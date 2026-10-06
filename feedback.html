@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flag this page — FourHundred</title>
+  <meta name="description" content="Tell us a page was clear, unclear, or out of date. Not published. Do not include an account or a bill.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://fourhundredx.com/feedback.html">
+  <meta property="og:title" content="Flag this page">
+  <meta property="og:description" content="A private note to the editor. Not published.">
+  <meta property="og:url" content="https://fourhundredx.com/feedback.html">
+  <meta property="og:image" content="https://fourhundredx.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">FourHundred</a>
+      <nav class="nav">
+        <a href="start-here/index.html">Start here</a>
+        <a href="foundations/index.html">Foundations</a>
+        <a href="playbook/index.html">Playbook</a>
+        <a href="evidence/index.html">Evidence</a>
+        <a href="method.html">Method</a>
+        <a href="ai-tools.html">AI</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap article">
+    <p class="eyebrow">Not published</p>
+    <h1>Flag this page</h1>
+    <p class="meta">Goes to the editor only · Not a reply service</p>
+    <div class="who"><strong>What this is.</strong> One reaction, or one sentence about where the page lost you.<br><strong>What this is not.</strong> A place to ask which bill to pay. Those notes are not read as advice requests, and they are not posted.</div>
+    <hr>
+    <h2>One reaction</h2>
+    <p>Pick one. The mail opens on your device. The subject is the reaction and the page. No text is stored on this site, and nothing is shown to other readers.</p>
+    <p>
+      <a id="clear" href="mailto:corrections@fourhundredx.com?subject=Clear">Clear</a>
+      · <a id="unclear" href="mailto:corrections@fourhundredx.com?subject=Unclear">Unclear</a>
+      · <a id="dated" href="mailto:corrections@fourhundredx.com?subject=Out%20of%20date">Out of date</a>
+    </p>
+    <hr>
+    <h2>Where it lost you</h2>
+    <p>One sentence. Do not include your name, an account number, a bill, a screenshot, or a request about which bill to pay.</p>
+    <label for="stuck">The sentence</label>
+    <textarea id="stuck" rows="4" maxlength="400" placeholder="The due-date step did not say what to write down."></textarea>
+    <p><button type="button" id="send">Email this sentence</button></p>
+    <p>If the button does nothing, email corrections@fourhundredx.com yourself. Same limits.</p>
+    <hr>
+    <p>FourHundred is an education tool. A note sent here is not personalized financial, tax, or legal advice, and it is not published.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="legal">FourHundred is an education tool. It is not personalized financial, tax, or legal advice.</p>
+      <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+      <p>© 2026 Xinyang Chen. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var page = params.get("page") || "/";
+      if (page.length > 120) page = page.slice(0, 120);
+      ["clear", "unclear", "dated"].forEach(function (id) {
+        var a = document.getElementById(id);
+        var label = a.textContent;
+        a.href = "mailto:corrections@fourhundredx.com?subject=" + encodeURIComponent(label + " — " + page) + "&body=" + encodeURIComponent("Page: " + page + "\nReaction: " + label + "\nNo account numbers.");
+      });
+      document.getElementById("send").addEventListener("click", function () {
+        var text = document.getElementById("stuck").value.replace(/\s+/g, " ").trim().slice(0, 400);
+        if (!text) return;
+        location.href = "mailto:corrections@fourhundredx.com?subject=" + encodeURIComponent("Unclear — " + page) + "&body=" + encodeURIComponent("Page: " + page + "\n" + text);
+      });
+    })();
+  </script>
+</body>
+</html>

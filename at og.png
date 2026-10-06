@@ -1,0 +1,47 @@
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ai-tools.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'disclaimer.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evidence/bills-last-month.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evidence/card-balances-pressure.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evidence/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evidence/unexpected-expenses.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'evidence/unmanageable-debt.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'foundations/7-day-cash-map-sheet.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'foundations/7-day-cash-map.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'foundations/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'method.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'playbook/due-date.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'playbook/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'playbook/minimum-payment.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'privacy.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/bill-i-cannot-pay.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/bills-this-month-sheet.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/bills-this-month.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/card-balance.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/cash-buffer.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/income-still-tight.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'start-here/index.html', LF will be replaced by CRLF the next time Git touches it
+ about.html                             | 11 [32m+++++++++++[m
+ ai-tools.html                          | 11 [32m+++++++++++[m
+ disclaimer.html                        | 11 [32m+++++++++++[m
+ evidence/bills-last-month.html         | 11 [32m+++++++++++[m
+ evidence/card-balances-pressure.html   | 11 [32m+++++++++++[m
+ evidence/index.html                    | 11 [32m+++++++++++[m
+ evidence/unexpected-expenses.html      | 11 [32m+++++++++++[m
+ evidence/unmanageable-debt.html        | 11 [32m+++++++++++[m
+ foundations/7-day-cash-map-sheet.html  | 11 [32m+++++++++++[m
+ foundations/7-day-cash-map.html        | 11 [32m+++++++++++[m
+ foundations/index.html                 | 11 [32m+++++++++++[m
+ method.html                            | 11 [32m+++++++++++[m
+ playbook/due-date.html                 |  6 [32m+++++[m[31m-[m
+ playbook/index.html                    | 11 [32m+++++++++++[m
+ playbook/minimum-payment.html          |  6 [32m+++++[m[31m-[m
+ privacy.html                           | 11 [32m+++++++++++[m
+ start-here/bill-i-cannot-pay.html      | 11 [32m+++++++++++[m
+ start-here/bills-this-month-sheet.html | 11 [32m+++++++++++[m
+ start-here/bills-this-month.html       |  6 [32m+++++[m[31m-[m
+ start-here/card-balance.html           | 11 [32m+++++++++++[m
+ start-here/cash-buffer.html            | 11 [32m+++++++++++[m
+ start-here/income-still-tight.html     | 11 [32m+++++++++++[m
+ start-here/index.html                  | 11 [32m+++++++++++[m
+ 23 files changed, 235 insertions(+), 3 deletions(-)

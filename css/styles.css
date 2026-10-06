@@ -184,3 +184,6 @@ code, .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 
 .chart { margin: 0.8rem 0 0.4rem; max-width: 40rem; }
 .chart svg { width: 100%; height: auto; }
 .chart-note { font-size: 0.86rem; color: #4a453c; }
+
+textarea{width:100%;max-width:38rem;font:inherit;padding:.5rem;border:1px solid #ccc}
+button{font:inherit;padding:.4rem .7rem}
