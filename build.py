@@ -120,27 +120,27 @@ def paths(depth: int):
     prefix = "../" * depth
     return {
         "css": f"{prefix}css/styles.css",
-        "home": f"{prefix}index.html",
-        "found": f"{prefix}foundations/400-test.html",
-        "play": f"{prefix}playbook/minimum-payment.html",
-        "evid": f"{prefix}evidence/400.html",
-        "meth": f"{prefix}method.html",
-        "disc": f"{prefix}disclaimer.html",
-        "bills": f"{prefix}start-here/bills-this-month.html",
-        "card": f"{prefix}start-here/card-balance.html",
-        "coll": f"{prefix}start-here/collections.html",
-        "tight": f"{prefix}start-here/income-still-tight.html",
-        "cash": f"{prefix}foundations/7-day-cash-map.html",
-        "ai": f"{prefix}ai-tools.html",
-        "evid2": f"{prefix}evidence/unmanageable-debt.html",
-        "evid3": f"{prefix}evidence/bills-last-month.html",
-        "evid4": f"{prefix}evidence/card-balances-pressure.html",
-        "evid5": f"{prefix}evidence/unexpected-expenses.html",
-        "evidx": f"{prefix}evidence/index.html",
-        "foundx": f"{prefix}foundations/index.html",
-        "playx": f"{prefix}playbook/index.html",
-        "startx": f"{prefix}start-here/index.html",
-        "priv": f"{prefix}privacy.html",
+        "home": f"{prefix}" or "./",
+        "found": f"{prefix}foundations/400-test",
+        "play": f"{prefix}playbook/minimum-payment",
+        "evid": f"{prefix}evidence/400",
+        "meth": f"{prefix}method",
+        "disc": f"{prefix}disclaimer",
+        "bills": f"{prefix}start-here/bills-this-month",
+        "card": f"{prefix}start-here/card-balance",
+        "coll": f"{prefix}start-here/collections",
+        "tight": f"{prefix}start-here/income-still-tight",
+        "cash": f"{prefix}foundations/7-day-cash-map",
+        "ai": f"{prefix}ai-tools",
+        "evid2": f"{prefix}evidence/unmanageable-debt",
+        "evid3": f"{prefix}evidence/bills-last-month",
+        "evid4": f"{prefix}evidence/card-balances-pressure",
+        "evid5": f"{prefix}evidence/unexpected-expenses",
+        "evidx": f"{prefix}evidence/",
+        "foundx": f"{prefix}foundations/",
+        "playx": f"{prefix}playbook/",
+        "startx": f"{prefix}start-here/",
+        "priv": f"{prefix}privacy",
     }
 
 
@@ -316,11 +316,11 @@ def write_evidence_index():
     <div class="who"><strong>Who this is for.</strong> Readers who want the definition behind a Home gauge.<br><strong>Who should skip this.</strong> People who need a this-month action. Use Start here.</div>
     <h2>Live cards</h2>
     <ul>
-      <li><a href="400.html">Would cover a $400 expense with cash or its equivalent</a> — 63 percent of U.S. adults. Fed SHED 2025.</li>
-      <li><a href="bills-last-month.html">Did not pay all bills in full last month</a> — 16 percent of U.S. adults. Fed SHED 2025.</li>
-      <li><a href="unmanageable-debt.html">Households with unmanageable debt</a> — 31 percent of U.S. households. Pulse 2026.</li>
-      <li><a href="card-balances-pressure.html">Card balances among adults finding it difficult to get by</a> — +$2,530 from 2023 to 2025. Fed SHED matched to credit records.</li>
-      <li><a href="unexpected-expenses.html">Major unexpected expenses in the prior 12 months</a> — 59 percent any shock; 30 percent a major vehicle repair. Fed SHED 2025, new questions.</li>
+      <li><a href="400">Would cover a $400 expense with cash or its equivalent</a> — 63 percent of U.S. adults. Fed SHED 2025.</li>
+      <li><a href="bills-last-month">Did not pay all bills in full last month</a> — 16 percent of U.S. adults. Fed SHED 2025.</li>
+      <li><a href="unmanageable-debt">Households with unmanageable debt</a> — 31 percent of U.S. households. Pulse 2026.</li>
+      <li><a href="card-balances-pressure">Card balances among adults finding it difficult to get by</a> — +$2,530 from 2023 to 2025. Fed SHED matched to credit records.</li>
+      <li><a href="unexpected-expenses">Major unexpected expenses in the prior 12 months</a> — 59 percent any shock; 30 percent a major vehicle repair. Fed SHED 2025, new questions.</li>
     </ul>
     <p>Related: <a href="{p['found']}">$400 Foundation</a> · <a href="{p['cash']}">7-day cash map</a> · <a href="{p['meth']}">Method</a></p>
   </main>
@@ -344,8 +344,8 @@ def write_foundations_index():
     <div class="who"><strong>Who this is for.</strong> Readers who need the basic clock: this week’s cash, or a $400 shock.<br><strong>Who should skip this.</strong> People whose rent or utilities are already at risk today. Use Start here.</div>
     <h2>Live pages</h2>
     <ul>
-      <li><a href="400-test.html">The $400 test and the three cash buffers</a> — whether a small shock becomes a carried card balance. Rung 1 is $400, not three months.</li>
-      <li><a href="7-day-cash-map.html">A 7-day cash map</a> — whether the next week’s cash covers the next week’s required outflows, before any shock arrives.</li>
+      <li><a href="400-test">The $400 test and the three cash buffers</a> — whether a small shock becomes a carried card balance. Rung 1 is $400, not three months.</li>
+      <li><a href="7-day-cash-map">A 7-day cash map</a> — whether the next week’s cash covers the next week’s required outflows, before any shock arrives.</li>
     </ul>
     <p>Not live yet: a three-month reserve page. Do not treat Rung 1 as that page.</p>
     <p>Related: <a href="{p['startx']}">Start here</a> · <a href="{p['evidx']}">Evidence</a> · <a href="{p['meth']}">Method</a></p>
@@ -370,7 +370,7 @@ def write_playbook_index():
     <div class="who"><strong>Who this is for.</strong> Readers whose essentials are covered this month and who need one current method.<br><strong>Who should skip this.</strong> People who may miss rent, utilities, food, or medicine. Use Start here first.</div>
     <h2>This week</h2>
     <ul>
-      <li><a href="minimum-payment.html">Why the minimum payment keeps a card balance alive</a> — the minimum keeps the account current. It does not retire the balance. Use the warning box on your own statement.</li>
+      <li><a href="minimum-payment">Why the minimum payment keeps a card balance alive</a> — the minimum keeps the account current. It does not retire the balance. Use the warning box on your own statement.</li>
     </ul>
     <p>Next methods are not published until this one has a week in the wild. No product picks live here.</p>
     <p>Related: <a href="{p['card']}">Card balance is growing</a> · <a href="{p['evid4']}">Card-balance Evidence</a> · <a href="{p['meth']}">Method</a></p>
@@ -395,10 +395,10 @@ def write_start_index():
     <div class="who"><strong>Who this is for.</strong> Adults in the United States already under pressure.<br><strong>Who should skip this.</strong> Readers who only want a definition. Use Evidence or Foundations.</div>
     <h2>Live paths</h2>
     <ul>
-      <li><a href="bills-this-month.html">I may not make this month’s bills</a> — also the path for “I got a bill I cannot pay.” Protect housing, utilities, food, and medicine first.</li>
-      <li><a href="card-balance.html">My credit card balance is growing</a> — the number is rising or not falling while you pay. Leave if rent is at risk.</li>
-      <li><a href="collections.html">I am late, or in collections</a> — name the stage: original company, collector, or court paper.</li>
-      <li><a href="income-still-tight.html">I earn enough and still run out</a> — the paycheck looks fine and the month still ends empty, short, or on a card.</li>
+      <li><a href="bills-this-month">I may not make this month’s bills</a> — also the path for “I got a bill I cannot pay.” Protect housing, utilities, food, and medicine first.</li>
+      <li><a href="card-balance">My credit card balance is growing</a> — the number is rising or not falling while you pay. Leave if rent is at risk.</li>
+      <li><a href="collections">I am late, or in collections</a> — name the stage: original company, collector, or court paper.</li>
+      <li><a href="income-still-tight">I earn enough and still run out</a> — the paycheck looks fine and the month still ends empty, short, or on a card.</li>
     </ul>
     <h2>Uses a Foundation instead</h2>
     <ul>
@@ -423,7 +423,7 @@ def write_disclaimer():
     <h1>Disclaimer</h1>
     <p>FourHundred is an education tool for adults in the United States. It is not personalized financial, tax, or legal advice. Nothing on this site is an offer to sell a financial product or a substitute for a licensed professional who can see your full situation.</p>
     <p>Pages are dated. Evidence cards change when their primary source changes. If a number or definition is wrong, see Method for how corrections are handled.</p>
-    <p>Minimum launch pages do not sell products and do not take referral fees. See also <a href="privacy.html">Privacy</a>.</p>
+    <p>Minimum launch pages do not sell products and do not take referral fees. See also <a href="privacy">Privacy</a>.</p>
   </main>
 """
     page += FOOTER.format(**p)
