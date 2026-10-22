@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://fourhundredx.com/start-here/bills-this-month-sheet">
   <title>This month’s bills sheet — FourHundred</title>
   <meta name="description" content="A one-page printable list for a month that may not cover every bill. Education only.">
   <meta property="og:site_name" content="FourHundred">
@@ -18,32 +19,13 @@
   <meta name="twitter:image" content="https://fourhundredx.com/og.png">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <style>
-    .sheet-actions { margin: 0 0 1rem; }
-    .sheet-actions button { font: inherit; background: #1c1914; color: #f3efe6; border: 0; padding: 0.45rem 0.9rem; cursor: pointer; }
-    .sheet-blank { border-bottom: 1px solid #1c1914; display: inline-block; min-width: 7rem; height: 1.05em; }
-    .sheet-table td { height: 1.85rem; }
-    .sheet-rules { font-size: 0.86rem; color: #4a453c; }
-    .script { border: 1px solid #d4cdc0; padding: 0.7rem 0.85rem; margin: 0.8rem 0; }
-    @media print {
-      .site-header .nav, .sheet-actions, .no-print { display: none !important; }
-      .site-header { position: static; border: 0; }
-      body { background: #fff; font-size: 10.5pt; }
-      .who { background: none; border: 1px solid #ccc; }
-      .sheet-table td, .sheet-table th { border: 1px solid #333; }
-    }
-  
-    .sheet-input { font: inherit; border: 0; border-bottom: 1px solid #1c1914; background: transparent; width: 100%; padding: 0.15rem 0; }
-    .sheet-table .sheet-input { border-bottom: 0; }
-    @media print { .sheet-input { border-bottom: 1px solid #333; } }
-  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="../">FourHundred</a>
+      <a class="wordmark" href="../index">FourHundred</a>
       <nav class="nav">
-        <a href="./">Start here</a>
+        <a href="index">Start here</a>
         <a href="../foundations/">Foundations</a>
         <a href="../playbook/">Playbook</a>
         <a href="../evidence/">Evidence</a>
@@ -56,9 +38,9 @@
     <p class="eyebrow">Start here · Sheet</p>
     <h1>This month’s bills</h1>
     <p class="meta">One page. This month only. Last reviewed September 29, 2026.</p>
-    <p class="no-print" style="margin:0 0 1rem;"><a href="../sheets/bills-this-month-sheet-fillable.pdf" style="font-weight:600;">Fillable PDF for phone</a> — or fill the fields below, then screenshot. Record structure only. · <a href="bills-this-month">How to use this list</a></p>
+    <p class="no-print sheet-note"><a href="../sheets/bills-this-month-sheet-fillable.pdf" style="font-weight:600;">Fillable PDF for phone</a> — or fill the fields below, then screenshot. Record structure only. · <a href="bills-this-month">How to use this list</a></p>
     <div class="who"><strong>Who this is for.</strong> Adults in the U.S. who already know this month may not cover every bill.<br><strong>Who should skip this.</strong> Bills are current and you only need a buffer. If a court paper, lockout, or shutoff date is already on the table, call 211 or legal aid the same day — do not start with this grid.</div>
-    <p>Today’s date <input type="text" class="sheet-input" style="width:6rem;" aria-label="Today"> · Cash + money that will actually arrive before the next due date: $ <input type="text" class="sheet-input" style="width:6rem;" aria-label="Cash arriving"></p>
+    <p>Today’s date <input type="text" class="sheet-input sheet-input-short" aria-label="Today"> · Cash + money that will actually arrive before the next due date: $ <input type="text" class="sheet-input sheet-input-short" aria-label="Cash arriving"></p>
     <p>Any letter that names eviction, foreclosure, shutoff, repossession, garnishment, or a court date: <input type="text" class="sheet-input" aria-label="Notice"></p>
     <table class="sheet-table">
       <thead><tr><th>Bill</th><th>Due</th><th>Protects housing / power / food / medicine / work?</th><th>This month I will</th></tr></thead>
@@ -76,20 +58,20 @@
     <p class="sheet-rules">This month I will: pay in full / pay $____ and call / skip and call. A notice with a deadline jumps the list.</p>
     <div class="script">
       <p><strong>Words you can read on the phone</strong></p>
-      <p>The month is short. I can send $ <input type="text" class="sheet-input" style="width:5rem;" aria-label="Amount"> on <input type="text" class="sheet-input" style="width:6rem;" aria-label="Date">. Do you have a hardship, an extension, or a payment arrangement? Please tell me the date, the amount, and whether this keeps the account current.</p>
-      <p class="sheet-rules" style="margin:0.4rem 0 0">Write the person’s name, the date, and what they said. Do not promise an amount that would bounce rent or another required payment.</p>
+      <p>The month is short. I can send $ <input type="text" class="sheet-input sheet-input-short" aria-label="Amount"> on <input type="text" class="sheet-input sheet-input-short" aria-label="Date">. Do you have a hardship, an extension, or a payment arrangement? Please tell me the date, the amount, and whether this keeps the account current.</p>
+      <p class="sheet-rules">Write the person’s name, the date, and what they said. Do not promise an amount that would bounce rent or another required payment.</p>
     </div>
-    <p>First protect-first payment I can still send today: <span class="sheet-blank" style="min-width:14rem"></span></p>
-    <p>First call I will make today: <span class="sheet-blank" style="min-width:14rem"></span></p>
-    <p>211 or utility hardship number: 211 · LIHEAP referral 866-674-6327 · other <span class="sheet-blank"></span></p>
-    <p class="sheet-rules">Starting order, then change it if a notice, a state rule, or a court order says otherwise: housing; essential utilities; food and required medicine; transport and insurance required for work or required care; court-ordered support and tax debts already in enforcement; then open-account minimums. This sheet does not tell you which bill to skip.</p>
-    <p class="sheet-rules">Method: <a href="bills-this-month">I may not make this month’s bills</a>. 211.org. fourhundredx.com</p>
+    <p>First protect-first payment I can still send today: <input type="text" class="sheet-input" aria-label="First protect-first payment"></p>
+    <p>First call I will make today: <input type="text" class="sheet-input" aria-label="First call"></p>
+    <p>211 or utility hardship number: 211 · LIHEAP referral 866-674-6327 · other <input type="text" class="sheet-input" aria-label="Other number"></p>
+    <p class="sheet-rules">Start here: <a href="bills-this-month">I may not make this month’s bills</a>. 211.org. fourhundredx.com</p>
     <p class="sheet-rules">FourHundred is an education tool. It is not personalized financial, tax, or legal advice.</p>
-  
-    <p class="no-print" style="margin-top:1.5rem;font-size:0.9rem;"><button type="button" onclick="window.print()" style="font:inherit;background:transparent;border:1px solid #1c1914;padding:0.3rem 0.7rem;cursor:pointer;">Print or save as PDF</button> — after you fill the fields above.</p>
+    <p class="no-print sheet-print"><button type="button" onclick="window.print()">Print or save as PDF</button> — after you fill the fields above.</p>
   </main>
   <footer class="site-footer">
     <div class="wrap">
       <p class="legal">FourHundred is an education tool. It is not personalized financial, tax, or legal advice.</p>
     </div>
   </footer>
+</body>
+</html>
